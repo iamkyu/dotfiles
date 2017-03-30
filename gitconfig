@@ -1,0 +1,19 @@
+[user]
+    name = kjnam
+    email = kyujnam@gmail.com
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+    ui = auto
+[color "diff"]
+    meta = yellow bold
+    ifrag = magenta bold
+    whitespace = red reverse
+[alias]
+    s = status
+    st = status -sb
+    b = branch
+    co = commit
+    f = "!git ls-files | grep -i" 
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
