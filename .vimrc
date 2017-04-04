@@ -5,6 +5,9 @@
 
 call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'matchit.zip'
+    Plug 'tpope/vim-surround'
 call plug#end()
 
 " ============================================================================
