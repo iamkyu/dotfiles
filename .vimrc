@@ -7,7 +7,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'scrooloose/nerdtree'
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'matchit.zip'
+    Plug 'vim-airline/vim-airline'
     Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-fugitive'           " git 명령어 wrapper
+    Plug 'airblade/vim-gitgutter'       " 편집기에서 마지막 커밋과 변경 비교
+    Plug 'johngrib/FlatColor-johngrib'  " color theme
 call plug#end()
 
 " ============================================================================
@@ -28,6 +32,11 @@ set ruler " 화면 우측 하단에 커서 위치를(줄,칸) 나타냄
 set visualbell " 키를 잘못 눌렀을 때 경고음 대신 화면을 깜빡임
 set incsearch " 검색할 텍스트를 입력하는 동안 바로 검색 수행
 set hlsearch " 검색결과를 구문 강조
+
+set wildmenu wildignorecase " 커맨드 자동 완성 후보 목록 나타냄
+set wildmode=full
+" set termguicolors
+" colorscheme flatcolor-johngrib
 
 " ============================================================================
 " MAPPINGS
