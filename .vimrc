@@ -9,9 +9,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'matchit.zip'
     Plug 'vim-airline/vim-airline'
     Plug 'tpope/vim-surround'
-    Plug 'tpope/vim-fugitive'           " git 명령어 wrapper
-    Plug 'airblade/vim-gitgutter'       " 편집기에서 마지막 커밋과 변경 비교
-    Plug 'johngrib/FlatColor-johngrib'  " color theme
+    Plug 'tpope/vim-fugitive'          " git 명령어 wrapper
+    Plug 'airblade/vim-gitgutter'      " 편집기에서 마지막 커밋과 변경 비교
+    Plug 'johngrib/FlatColor-johngrib' " color theme
+    Plug 'godlygeek/tabular'           " text filtering and alignment
 call plug#end()
 
 " ============================================================================
@@ -47,6 +48,9 @@ nnoremap j gj
 nnoremap k gk
 vnoremap j gj
 vnoremap k gk
+
+" <Ctrl-t> | tabular
+vnoremap <C-t> :Tabularize /
 
 " <F10> | NERD Tree
 nnoremap <F10> :NERDTreeToggle<cr>
