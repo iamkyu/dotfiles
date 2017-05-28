@@ -37,7 +37,7 @@ set hlsearch " 검색결과를 구문 강조
 set wildmenu wildignorecase " 커맨드 자동 완성 후보 목록 나타냄
 set wildmode=full
 " set termguicolors
-" colorscheme flatcolor-johngrib
+colorscheme flatcolor-johngrib
 
 " ============================================================================
 " MAPPINGS
@@ -57,3 +57,8 @@ nnoremap <F10> :NERDTreeToggle<cr>
 
 " <Ctrl-l> | redraws the screen and removes any search highlighting
 nnoremap <silent> <C-l> :nohl<CR><C-l>
+
+if has("gui_running")
+    colorscheme flatcolor-johngrib
+    highlight Normal guifg=white guibg=black
+endif
