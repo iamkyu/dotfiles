@@ -3,5 +3,6 @@ nnoremap <C-S-5> :action EditorMatchBrace<CR>
 nnoremap '. :action JumpToLastChange<CR>0
 nnoremap `. :action JumpToLastChange<CR>0
 
-set gvimpath=/usr/local/bin/mvim
+set clipboard=unnamed "운영체제 클립보드를 기본 레지스터에 매핑하기
 
+set gvimpath=/usr/local/bin/mvim
