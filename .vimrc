@@ -14,6 +14,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'johngrib/FlatColor-johngrib' " color theme
     Plug 'godlygeek/tabular'           " text filtering and alignment
     Plug 'johngrib/vim-game-code-break'
+    Plug 'iamcco/markdown-preview.nvim', { 'do': ':call mkdp#util#install()', 'for': 'markdown', 'on': 'MarkdownPreview' }
 call plug#end()
 
 " ============================================================================
