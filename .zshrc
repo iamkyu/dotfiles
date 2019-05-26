@@ -2,8 +2,6 @@ if [ -f ~/.bash_profile ]; then
     . ~/.bash_profile
 fi
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/kjnam/.oh-my-zsh
 
@@ -114,6 +112,8 @@ prompt_context() {
         prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
     fi
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 LANG="en_US.UTF-8"
 LC_COLLATE="en_US.UTF-8"
